@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+.admin-template {
+    #content {
+        background-color: rgb(240, 241, 241);
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #f2f2f2;
+        }
+    }
+    .bg-gradient-primary {
+        background-color: #012e66;
+        background-image: none;
+        background-size: cover;
+    }
+    .page-header {
+        font-weight: 500;
+        font-size: 1em;
+        color: #000;
+        padding-left: 10px;
+        font-weight: 500;
+    }
+}

@@ -85,11 +85,11 @@
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Quản lý máy</h6>
-            <a class="collapse-item" href="#">Thêm Thiết Bị</a>
-            <a class="collapse-item" href="#">Danh sách</a>
+            <a class="collapse-item" href="<?= site_url('device/create') ?>">Thêm Thiết Bị</a>
+            <a class="collapse-item" href="<?= site_url('device') ?>">Danh sách</a>
             <h6 class="collapse-header">Linh kiện & Vật tư:</h6>
             <a class="collapse-item" href="#">Thêm Linh Kiện</a>
-            <a class="collapse-item" href="#">Tất cả</a>
+            <a class="collapse-item" href="#">Dánh sách Linh kiện</a>
         </div>
     </div>
 </li>

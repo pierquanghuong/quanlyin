@@ -1,0 +1,148 @@
+form {
+    font-size: .8em;
+    font-weight: 300;
+    label {
+
+    }
+    .text-muted {
+        color: #b0b0b0;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+    }
+    
+    ::-moz-placeholder {
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+    }
+    
+    :-ms-input-placeholder {
+        /** notice that ie has only a single colon) */
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+    }
+    
+    ::-webkit-input-placeholder {
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+    }
+    
+    ::placeholder {
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+    }
+
+    .img-upload {
+        padding: 0;
+        .upload {
+            &__box {
+            padding: 0;
+            }
+            &__inputfile {
+            width: .1px;
+            height: .1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+            }
+            
+            &__btn {
+                display: inline-block;
+                font-weight: 300;
+                color: #7b7b7b;
+                text-align: center;
+                min-width: 116px;
+                padding: 20px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: 2px solid;
+                    border-top-style: solid;
+                    border-top-color: currentcolor;
+                    border-right-style: solid;
+                    border-right-color: currentcolor;
+                    border-bottom-style: solid;
+                    border-bottom-color: currentcolor;
+                    border-left-style: solid;
+                    border-left-color: currentcolor;
+                border-top-color: currentcolor;
+                border-right-color: currentcolor;
+                border-bottom-color: currentcolor;
+                border-left-color: currentcolor;
+                background-color: #fff;
+                border-color: #eee;
+                border-radius: 10px;
+                line-height: 10px;
+                font-size: 14px;
+                width: 100%;
+                border-style: dashed;  
+                height: 100px;
+                i.fa {
+                    margin-top: 15px;
+                }
+            &:hover {
+                background-color: unset;
+                color: #4045ba;
+                transition: all .3s ease;
+            }
+            
+            &-box {
+                margin-bottom: 0px;
+            }
+            }
+            
+            &__img {
+            &-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+            
+            &-box {
+                width: 20%;
+                padding: 0 10px;
+                margin-bottom: 12px;
+            }
+            
+            &-close {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;   
+                top: 10px;
+                right: 10px;
+                text-align: center;
+                line-height: 24px;
+                z-index: 1;
+                cursor: pointer;
+        
+                &:after {
+                    content: '\2716';
+                    font-size: 14px;
+                    color: white;
+                }
+                }
+            }
+        }
+        
+        .img-bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding-bottom: 100%;
+        }
+    }
+
+    .js-example-basic-single {
+        font-size: .8em;
+    }
+}
