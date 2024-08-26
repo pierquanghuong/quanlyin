@@ -1,0 +1,19 @@
+.bg-gradient-primary {
+    background-color: #012e66;
+    background-image: none;
+    background-size: cover;
+}
+.page-header {
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #000;
+    padding-left: 10px;
+}
+
+.page-widget {
+    background-color: #fff;
+}
+
+#content {
+  background-color: rgb(240, 241, 241);
+}
