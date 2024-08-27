@@ -20,7 +20,7 @@ class Index extends BaseController
     public function index()
     {
         $this->data['page_title'] = 'Quản Lý Thiết Bị';
-        $this->data['page_header'] = 'Danh Sách Thiết Bị';
+        $this->data['page_header'] = 'Quản Lý Thiết Bị';
         return self::render('index');
     }
 

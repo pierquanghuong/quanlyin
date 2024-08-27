@@ -2,16 +2,13 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+@use '../abstracts';
 .admin-template {
     #content {
         background-color: rgb(240, 241, 241);
-        .card-header {
-            background-color: #fff;
-            border-bottom: 1px solid #f2f2f2;
-        }
     }
     .bg-gradient-primary {
-        background-color: #012e66;
+        background-color: #1c1c1c;
         background-image: none;
         background-size: cover;
     }
@@ -21,5 +18,45 @@
         color: #000;
         padding-left: 10px;
         font-weight: 500;
+    }
+
+    footer.sticky-footer {
+    padding: 1rem 0;
+    flex-shrink: 0;
+    } 
+
+    .device-list {
+        .device-item {
+            border: 1px dashed #cecece;
+            padding: 10px 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            .item-name {
+                font-size: 1.5em;
+                padding: 10px 0;
+                font-weight: 400;
+                color: abstracts.$title-color;
+                span.status {
+                   
+                    border-radius: 5px;
+                    font-weight: 300;
+                    padding: 2px 10px;
+                    color: #fff;
+                    font-size: .5em;
+                }
+            }
+            .item-counter {
+                font-size: 1em;
+                font-weight: 300;
+                color: #004e7e;
+                padding: 0;
+                margin-right: 20px;
+            }
+
+            img.device-img {
+                max-width: 100px;
+                
+            }
+        }
     }
 }
