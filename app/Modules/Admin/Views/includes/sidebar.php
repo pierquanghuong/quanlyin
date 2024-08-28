@@ -88,8 +88,8 @@
             <a class="collapse-item" href="<?= site_url('device/create') ?>">Thêm Thiết Bị</a>
             <a class="collapse-item" href="<?= site_url('device') ?>">Danh sách</a>
             <h6 class="collapse-header">Linh kiện & Vật tư:</h6>
-            <a class="collapse-item" href="#">Thêm Linh Kiện</a>
-            <a class="collapse-item" href="#">Dánh sách Linh kiện</a>
+            <a class="collapse-item" href="<?= site_url('part/create') ?>">Thêm Linh Kiện</a>
+            <a class="collapse-item" href="<?= site_url('part') ?>">Dánh sách Linh kiện</a>
         </div>
     </div>
 </li>

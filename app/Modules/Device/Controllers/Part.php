@@ -3,9 +3,8 @@
 namespace App\Modules\Device\Controllers;
 
 use App\Controllers\BaseController;
-use App\Modules\Device\Models\Device;
 
-class Index extends BaseController
+class Part extends BaseController
 {
     protected $folder_directory = "Modules\\Device\\Views\\";
     protected $model;
@@ -14,21 +13,20 @@ class Index extends BaseController
 
     public function __construct()
     {
-        $this->model = new Device;
     }
 
     public function index()
     {
-        $this->data['page_title'] = 'Quản Lý Thiết Bị';
-        $this->data['page_header'] = 'Quản Lý Thiết Bị';
-        return self::render('device/index');
+        $data['page_title'] = 'Quản Lý Linh Kiện';
+        $data['page_header'] = 'Danh sách Linh Kiện - Vật Tư';
+        return self::render('part/index');
     }
 
     public function create()
     {
-        $this->data['page_title'] = 'Quản Lý Thiết Bị';
-        $this->data['page_header'] = 'Thêm Thiết Bị Mới';
-        return self::render('device/create');
+        $data['page_title'] = 'Quản Lý Linh Kiện';
+        $data['page_header'] = 'Danh sách Linh Kiện - Vật Tư';  
+        return self::render('part/create');
     }
 
     public function render(string $page): string

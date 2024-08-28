@@ -6,3 +6,10 @@ $routes->group(
         $routes->get('create', 'Index::create');
     }
 );
+
+$routes->group(
+    'part', ['namespace' => 'App\Modules\Device\Controllers'], function ($routes) {
+        $routes->get('/', 'Part::index');
+        $routes->get('create', 'Part::create');
+    }
+);

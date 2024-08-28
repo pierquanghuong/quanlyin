@@ -98,6 +98,31 @@
                                     <a href="#" class="float-right">08:00 15/08/2024</a>
                                     <p>Bản in bị mờ</p>
                                 </li>
+                                <li>
+                                    <a target="_blank" href="https://www.totoprayogo.com/#">Thay Vật Tư</a>
+                                    <a href="#" class="float-right">14:00 20/08/2024</a>
+                                    <p>Thay web dầu máy RICOH mp6002</p>
+                                </li>
+                                <li>
+                                    <a href="#">Đổ mực</a>
+                                    <a href="#" class="float-right">14:00 19/08/2024</a>
+                                    <p>Đổ mực xanh, vàng, đỏ</p>
+                                </li>
+                                <li>
+                                    <a href="#">Máy TOSHIBA E857 báo lỗi</a>
+                                    <a href="#" class="float-right">08:00 15/08/2024</a>
+                                    <p>Bản in bị mờ</p>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.totoprayogo.com/#">Thay Vật Tư</a>
+                                    <a href="#" class="float-right">14:00 20/08/2024</a>
+                                    <p>Thay web dầu máy RICOH mp6002</p>
+                                </li>
+                                <li>
+                                    <a href="#">Đổ mực</a>
+                                    <a href="#" class="float-right">14:00 19/08/2024</a>
+                                    <p>Đổ mực xanh, vàng, đỏ</p>
+                                </li>
                             </ul>
                         </div>
                     </div>           
