@@ -69,6 +69,7 @@
                           <input type="text" name="price" id="" class="form-control" placeholder="Giá mua máy" aria-describedby="ç">
                           <small id="helpPrice" class="text-muted">Giá mua thiết bị ban đầu - sử dụng quản lý máy</small>
                         </div>
+                        
                         <div class="form-group">
                           <label for="opGroup">Phân loại</label>
                           <select class="form-control js-example-basic-single" name="group" id="opGroup">

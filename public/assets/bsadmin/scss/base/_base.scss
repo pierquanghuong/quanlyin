@@ -32,6 +32,6 @@ a {
 
   @include abstracts.on-event {
     color: abstracts.$text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }

@@ -17,15 +17,15 @@ class Part extends BaseController
 
     public function index()
     {
-        $data['page_title'] = 'Quản Lý Linh Kiện';
-        $data['page_header'] = 'Danh sách Linh Kiện - Vật Tư';
+        $this->data['page_title'] = 'Quản Lý Linh Kiện';
+        $this->data['page_header'] = 'Danh sách Linh Kiện - Vật Tư';
         return self::render('part/index');
     }
 
     public function create()
     {
-        $data['page_title'] = 'Quản Lý Linh Kiện';
-        $data['page_header'] = 'Danh sách Linh Kiện - Vật Tư';  
+        $this->data['page_title'] = 'Quản Lý Linh Kiện';
+        $this->data['page_header'] = 'Thêm mới';  
         return self::render('part/create');
     }
 

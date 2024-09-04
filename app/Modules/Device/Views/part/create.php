@@ -33,22 +33,14 @@
                                 <div class="col">
                                     <label for="txtDate">Ngày nhập</label>
                                     <input type="text" name="date" id="txtDate" class="form-control" placeholder="Ngày nhập" aria-describedby="helpDate" required>
-                                    <small id="helpDate" class="text-muted">Giá nhập linh kiện</small>
+                                    <small id="helpDate" class="text-muted">Ngày nhập linh kiện</small>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="">Số lượng nhập</label>
-                                <input type="number" value = "1" name="qty" id="" class="form-control" placeholder="Số lượng" aria-describedby="helpDate">
-                                <small id="helpDate" class="text-muted">Số lượng nhập</small>   
+                                    <input type="number" value = "1" name="qty" id="" class="form-control" placeholder="Số lượng" aria-describedby="helpDate">
+                                <small id="helpDate" class="text-muted">Được cộng vào tồn kho</small>
                             </div>
-                        </div>           
-                    </div>
-                    <div class="page-widget card mb-4">
-                        <div class="card-header">
-                            Phân loại
-                        </div>
-                        <div class="card-body">
-                            
                             <div class="form-group">
                                 <label for="opGroup">Nhóm linh kiện - Vật Tư</label>
                                 <select class="form-control js-example-basic-single" name="group" id="opGroup">
@@ -79,31 +71,20 @@
                             </div>
 
                             <div class="form-group">
-                            <label for="txtSupplier">Nhà cung cấp</label>
-                            <input type="text" name="supplier" id="txtSupplier" class="form-control" placeholder="Nhà Cung Cấp" aria-describedby="helpSupplier">
-                            <small id="helpSupplier" class="text-muted">Nhà cung cấp máy - người bán</small>
+                                <label for="txtSupplier">Nhà cung cấp</label>
+                                <input type="text" name="supplier" id="txtSupplier" class="form-control" placeholder="Nhà Cung Cấp" aria-describedby="helpSupplier">
+                                <small id="helpSupplier" class="text-muted">Nhà cung cấp máy - người bán</small>
                             </div>
 
                             <div class="form-group">
-                            <label for="txtCounterPlan">Counter đạt được</label>
-                            <input type="number" name="counter-plan" id="txtCounterPlan" class="form-control" placeholder="Bản in" aria-describedby="helpCounterPlan">
-                            <small id="helpCounterPlan" class="text-muted">Counter sử dụng dự tính</small>
-                            </div>
-                            <div class="form-group">
-                            <label for="txtTimePlan">Thời gian sử dụng</label>
-                            <input type="text" name="time-sell" id="txtTimePlan" class="form-control" placeholder="Thời gian" aria-describedby="txtTimePlan">
-                            <small id="txtTimePlan" class="text-muted">Thời gian sử dụng dự tính</small>
-                            </div>
-
-                            <div class="form-group">
-                            <label for="txtSellPrice">Giá bán</label>
-                            <input type="text" name="sell-price" id="txtSellPrice" class="form-control" placeholder="Giá bán" aria-describedby="helpSellPrice">
-                            <small id="helpSellPrice" class="text-muted">Giá bán khi hết khấu hao</small>
+                                <label for="txtNote">Ghi chú</label>
+                                <textarea name="note" id="txtNote" rows="3" class="form-control" aria-describedby="helpNote"></textarea>
+                                <small id="helpNote" class="text-muted">Ghi chú, đánh giá linh kiện</small>
                             </div>
                         </div>
 
                         <div class="card-footer text-right">
-                            <button class="btn btn-primary" type="submit">Nhập máy</button>
+                            <button class="btn btn-primary" type="submit">Nhập linh kiện</button>
                             <button class="btn btn-info" type="submit">Thoát</button>
                         </div>
 

@@ -17,32 +17,36 @@
                     
                     <div class="card-body device-list">
                         <!-- list device -->
-                        <div class="row no-gutters align-items-center device-item">
-                            <div class="col-md-10">
-                                <div class="item-name">
-                                    RICOH MP6002 <span class="status badge badge-primary">Đang hoạt động </span>
-                                    
+                        <a href="<?= site_url('device/edit/1') ?>" class="device-link">
+                            <div class="row no-gutters align-items-center device-item">
+                                <div class="col-md-10">
+                                    <div class="item-name">
+                                        RICOH MP6002 <span class="status badge badge-primary">Đang hoạt động </span>
+                                        
+                                    </div>
+                                    <span class="item-counter"> Counter: 4.991.009</span> 
                                 </div>
-                                <span class="item-counter"> Counter: 4.991.009</span> 
-                            </div>
-                        
-                            <div class="col-md-2">
-                                <img class="device-img" src="<?= site_url('uploads/images/devices') ?>/ricoh6002.jpg" alt="RICOH 6002">
-                            </div>
-                        </div>
-                        <div class="row no-gutters align-items-center device-item">
-                            <div class="col-md-10">
-                                <div class="item-name">
-                                    RICOH MP8001 <span class="status badge badge-primary">Đang hoạt động </span>
-                                    
+                            
+                                <div class="col-md-2">
+                                    <img class="device-img" src="<?= site_url('uploads/images/devices') ?>/ricoh6002.jpg" alt="RICOH 6002">
                                 </div>
-                                <span class="item-counter"> Counter: 5.991.009</span> 
                             </div>
-                        
-                            <div class="col-md-2">
-                                <img class="device-img" src="<?= site_url('uploads/images/devices') ?>/ricoh8001.jpg" alt="RICOH 6002">
+                        </a>
+                        <a href="<?= site_url('device/edit/1') ?>" class="device-link">
+                            <div class="row no-gutters align-items-center device-item">
+                                <div class="col-md-10">
+                                    <div class="item-name">
+                                        RICOH MP8001 <span class="status badge badge-primary">Đang hoạt động </span>
+                                        
+                                    </div>
+                                    <span class="item-counter"> Counter: 5.991.009</span> 
+                                </div>
+                            
+                                <div class="col-md-2">
+                                    <img class="device-img" src="<?= site_url('uploads/images/devices') ?>/ricoh8001.jpg" alt="RICOH 6002">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="row no-gutters align-items-center device-item">
                             <div class="col-md-10">
                                 <div class="item-name">

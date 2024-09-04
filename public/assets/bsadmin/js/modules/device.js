@@ -1,9 +1,16 @@
 /**
- * Upload multi images and preview
+ * Ready document js
  */
-jQuery(document).ready(function () {
+$(document).ready(function() {
+    //image box
     ImgUpload();
+    //device tooltip
+    $('.js-btn-tooltip').tooltip();
+    //select 2
 });
+/**
+ * Upload multi images and preview***********************
+ */
 function ImgUpload() {
 var imgWrap = "";
 var imgArray = [];
@@ -60,15 +67,4 @@ $('body').on('click', ".upload__img-close", function (e) {
     $(this).parent().parent().remove();
 });
 }
-/**
- * Select 2 form & validate
- */
-$(document).ready(function() {
-    $('#opGroup').select2({
-        theme: "classic"
-    });
-    $('#OpStatus').select2({
-        theme: "classic"
-    });
-    $("#deviceForm").validate();
-});
+/**************End image upload ************************ */

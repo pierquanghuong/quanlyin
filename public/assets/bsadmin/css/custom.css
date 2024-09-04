@@ -64,6 +64,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -331,12 +332,12 @@ html {
  * Basic styles for links
  */
 a {
-  color: rgb(229, 0, 80);
+  color: rgb(0, 97, 161);
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
   color: rgb(34, 34, 34);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /**
@@ -408,7 +409,103 @@ body {
   font-weight: 300;
 }
 
-.card-header {
+.img-upload {
+  padding: 0;
+}
+.img-upload .upload__box {
+  padding: 0;
+}
+.img-upload .upload__inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.img-upload .upload__btn {
+  display: inline-block;
+  font-weight: 300;
+  color: #7b7b7b;
+  text-align: center;
+  min-width: 116px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid;
+  border-top-style: solid;
+  border-top-color: currentcolor;
+  border-right-style: solid;
+  border-right-color: currentcolor;
+  border-bottom-style: solid;
+  border-bottom-color: currentcolor;
+  border-left-style: solid;
+  border-left-color: currentcolor;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
+  background-color: #fff;
+  border-color: #eee;
+  border-radius: 10px;
+  line-height: 10px;
+  font-size: 14px;
+  width: 100%;
+  border-style: dashed;
+  height: 100px;
+}
+.img-upload .upload__btn i.fa {
+  margin-top: 15px;
+}
+.img-upload .upload__btn:hover {
+  background-color: unset;
+  color: #4045ba;
+  transition: all 0.3s ease;
+}
+.img-upload .upload__btn-box {
+  margin-bottom: 0px;
+}
+.img-upload .upload__img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.img-upload .upload__img-box {
+  width: 20%;
+  padding: 0 10px;
+  margin-bottom: 12px;
+}
+.img-upload .upload__img-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.img-upload .upload__img-close:after {
+  content: "✖";
+  font-size: 14px;
+  color: white;
+}
+.img-upload .img-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.card {
+  box-shadow: 0px 2px 4px rgba(168, 168, 168, 0.25);
+  background-color: #FFFFFF;
+}
+.card .card-header {
   background-color: #fff;
   border-bottom: 1px solid #f8f9ff;
   font-weight: 400;
@@ -446,99 +543,17 @@ form ::placeholder {
   font-weight: 300;
   font-size: 0.9em;
 }
-form .img-upload {
-  padding: 0;
-}
-form .img-upload .upload__box {
-  padding: 0;
-}
-form .img-upload .upload__inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-form .img-upload .upload__btn {
-  display: inline-block;
-  font-weight: 300;
-  color: #7b7b7b;
-  text-align: center;
-  min-width: 116px;
-  padding: 20px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 2px solid;
-  border-top-style: solid;
-  border-top-color: currentcolor;
-  border-right-style: solid;
-  border-right-color: currentcolor;
-  border-bottom-style: solid;
-  border-bottom-color: currentcolor;
-  border-left-style: solid;
-  border-left-color: currentcolor;
-  border-top-color: currentcolor;
-  border-right-color: currentcolor;
-  border-bottom-color: currentcolor;
-  border-left-color: currentcolor;
-  background-color: #fff;
-  border-color: #eee;
-  border-radius: 10px;
-  line-height: 10px;
-  font-size: 14px;
-  width: 100%;
-  border-style: dashed;
-  height: 100px;
-}
-form .img-upload .upload__btn i.fa {
-  margin-top: 15px;
-}
-form .img-upload .upload__btn:hover {
-  background-color: unset;
-  color: #4045ba;
-  transition: all 0.3s ease;
-}
-form .img-upload .upload__btn-box {
-  margin-bottom: 0px;
-}
-form .img-upload .upload__img-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-}
-form .img-upload .upload__img-box {
-  width: 20%;
-  padding: 0 10px;
-  margin-bottom: 12px;
-}
-form .img-upload .upload__img-close {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-align: center;
-  line-height: 24px;
-  z-index: 1;
-  cursor: pointer;
-}
-form .img-upload .upload__img-close:after {
-  content: "✖";
-  font-size: 14px;
-  color: white;
-}
-form .img-upload .img-bg {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding-bottom: 100%;
-}
 form .js-example-basic-single {
   font-size: 0.8em;
+}
+
+.select2-container .select2-selection--single {
+  height: 38px !important;
+  border: 1px solid #ddd !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 38px !important;
 }
 
 .page-widget .card-header {
@@ -605,6 +620,15 @@ form .js-example-basic-single {
   padding: 1rem 0;
   flex-shrink: 0;
 }
+.admin-template .device-list .device-link:hover {
+  text-decoration: none;
+}
+.admin-template .device-list .device-link:hover .device-item {
+  cursor: pointer;
+  background-color: #f7f7f7;
+  font-style: none;
+  box-shadow: 3px #cecece;
+}
 .admin-template .device-list .device-item {
   border: 1px dashed #cecece;
   padding: 10px 5px;
@@ -633,6 +657,44 @@ form .js-example-basic-single {
 }
 .admin-template .device-list .device-item img.device-img {
   max-width: 100px;
+}
+.admin-template .device-info .info-list-row {
+  border-bottom: 1px solid #e6e6e6;
+}
+.admin-template .device-info .info-list-row h6 {
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 0;
+}
+.admin-template .device-info .info-list-row .info-value::before {
+  content: ": ";
+}
+.admin-template .report-table .card-header .title {
+  font-size: 17px;
+  color: #000;
+}
+.admin-template .report-table .card-header .accicon {
+  float: right;
+  font-size: 20px;
+  width: 1.2em;
+}
+.admin-template .report-table .card-header {
+  cursor: pointer;
+  border-bottom: none;
+}
+.admin-template .report-table .card {
+  border: 1px solid #ddd;
+}
+.admin-template .report-table .card-body {
+  border-top: 1px solid #ddd;
+}
+.admin-template .report-table .card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+.admin-template .accodi-help {
+  color: #006cac;
+  text-align: justify;
+  border-bottom: 0.5px solid #d5eeff;
 }
 
 /*# sourceMappingURL=custom.css.map */

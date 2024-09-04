@@ -23,9 +23,18 @@
     footer.sticky-footer {
     padding: 1rem 0;
     flex-shrink: 0;
-    } 
-
+    }
+    
     .device-list {
+        .device-link:hover {
+            text-decoration: none;
+            .device-item {
+                cursor: pointer;
+                background-color: #f7f7f7;
+                font-style: none;
+                box-shadow: 3px #cecece;
+            }
+        }
         .device-item {
             border: 1px dashed #cecece;
             padding: 10px 5px;
@@ -58,5 +67,50 @@
                 
             }
         }
+    }
+    
+    .device-info {
+        .info-list-row {
+            border-bottom: 1px solid #e6e6e6;
+            h6 { 
+                font-weight: 300;
+                padding: 10px 0;
+                margin: 0;
+            }
+            .info-value::before {
+                content: ': ';
+            }
+        }
+    }
+
+    .report-table {
+        .card-header .title {
+            font-size: 17px;
+            color: #000;
+        }
+        .card-header .accicon {
+          float: right;
+          font-size: 20px;  
+          width: 1.2em;
+        }
+        .card-header{
+          cursor: pointer;
+          border-bottom: none;
+        }
+        .card{
+          border: 1px solid #ddd;
+        }
+        .card-body{
+          border-top: 1px solid #ddd;
+        }
+        .card-header:not(.collapsed) .rotate-icon {
+          transform: rotate(180deg);
+        }
+    }
+
+    .accodi-help {
+        color: abstracts.$title-color;
+        text-align: justify;
+        border-bottom: 0.5px solid #d5eeff;
     }
 }
