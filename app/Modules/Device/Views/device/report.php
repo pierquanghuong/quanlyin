@@ -1,17 +1,8 @@
 <?php $this->extend('Modules\\Admin\\Views\\layouts\\admin') ?>
-    
+
+<!-- custom page style -->
 <?php $this->section('page-styles') ?>
     <link href="<?= base_url('assets/bsadmin') ?>/plugins/select2/css/select2.min.css" rel="stylesheet">
-<?php $this->endSection() ?>
-<?php $this->section('page-scripts') ?>
-    <script src="<?= base_url('assets/bsadmin') ?>/plugins/select2/js/select2.min.js"></script>
-    <script src="<?= base_url('assets/bsadmin') ?>/plugins/validate/jquery.validate.min.js"></script>
-    <script src="<?= base_url('assets/bsadmin') ?>/js/modules/device.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#txtDevice').select2();
-        });
-    </script>
 <?php $this->endSection() ?>
  
 <?php $this->section('page-content') ?>
@@ -77,7 +68,20 @@
                             </div>
                             <div id="errorTab" class="collapse" data-parent="#reportAccordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <p class="accodi-help">
+                                        Thay vật tư cho thiết bị, có thể thay nhiều linh kiện 1 lần, sử dụng từ khóa để gợi ý vật tư.
+                                        Báo cáo sau khi hoàn tất công việc thay vật tư, sau khi đã xác nhận thay không thể thay đổi.
+                                    </p>
+
+                                   
+                                    <label for="browser" class="form-label">Chọn linh kiện cần thay:</label>
+                                      <select class="form-select" name="parts[]" id="DevicePart" multiple="multiple">
+                                        <option value="44" selected>Gạt drum 6002</option>
+                                        <option value="65">Gạt Drum 8001</option>
+                                        <option value="77">Drum/Trống 7500</option>
+                                        <option value="21">Sạc Su 6502</option>
+                                      </select>
+                                
                                 </div>
                             </div>
                         </div>
@@ -143,3 +147,15 @@
     </form>
 <?php $this->endSection() ?>
 
+<!-- js script -->
+<?php $this->section('page-scripts') ?>
+    <script src="<?= base_url('assets/bsadmin') ?>/plugins/select2/js/select2.min.js"></script>
+    <script src="<?= base_url('assets/bsadmin') ?>/plugins/validate/jquery.validate.min.js"></script>
+    <script src="<?= base_url('assets/bsadmin') ?>/js/modules/device.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#DevicePart').select2();
+        });
+    </script>
+<?php $this->endSection() ?>

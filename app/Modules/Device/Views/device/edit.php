@@ -60,7 +60,14 @@
             <div class="col-md-12">
                 <div class="page-widget card mb-4">
                     <div class="card-header">
-                        Thống kê hoạt động
+                       <div class="row">
+                            <div class="col text-left">
+                                Thống kê hoạt động
+                            </div>
+                            <div class="col text-right">
+                                <a href="<?= site_url('device/report') ?>" >Tạo báo cáo</a>
+                            </div>
+                       </div>
                     </div>
                     <div class="card-body device-statis" >
                             <div class="row">
@@ -262,62 +269,62 @@
                 </div>
                 
                 <div class="page-widget card mb-4">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-md-6 text-left">
-                                Thao tác & báo cáo
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <a href="<?= site_url('device/report') ?>">Tạo báo cáo</a>
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                    Thao tác & báo cáo
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <a href="<?= site_url('device/report') ?>">Tạo báo cáo</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <div class="device-activity">
-                        <ul class="timeline widget-timeline">
-                            <li>
-                                <a target="_blank" href="#">Thay Vật Tư</a>
-                                <a href="#" class="float-right">14:00 20/08/2024</a>
-                                <p>Thay web dầu máy RICOH mp6002</p>
-                            </li>
-                            <li>
-                                <a href="#">Đổ mực</a>
-                                <a href="#" class="float-right">14:00 19/08/2024</a>
-                                <p>Đổ mực Ricoh 6002</p>
-                            </li>
-                            
-                            <li>
-                                <a target="_blank" href="#">Thay Vật Tư</a>
-                                <a href="#" class="float-right">14:00 20/08/2024</a>
-                                <p>Thay web dầu máy RICOH mp6002</p>
-                            </li>
-                            <li>
-                                <a href="#">Đổ mực</a>
-                                <a href="#" class="float-right">14:00 19/08/2024</a>
-                                <p>Đổ mực xanh, vàng, đỏ</p>
-                            </li>
-                            <li>
-                                <a href="#">Máy TOSHIBA E857 báo lỗi</a>
-                                <a href="#" class="float-right">08:00 15/08/2024</a>
-                                <p>Bản in bị mờ</p>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#">Thay Vật Tư</a>
-                                <a href="#" class="float-right">14:00 20/08/2024</a>
-                                <p>Thay web dầu máy RICOH mp6002</p>
-                            </li>
-                            <li>
-                                <a href="#">Đổ mực</a>
-                                <a href="#" class="float-right">14:00 19/08/2024</a>
-                                <p>Đổ mực xanh, vàng, đỏ</p>
-                            </li>
-                        </ul>
+                    <div class="card-body">
+                        <div class="device-activity">
+                            <ul class="timeline widget-timeline">
+                                <li>
+                                    <a target="_blank" href="#">Thay Vật Tư</a>
+                                    <a href="#" class="float-right">14:00 20/08/2024</a>
+                                    <p>Thay web dầu máy RICOH mp6002</p>
+                                </li>
+                                <li>
+                                    <a href="#">Đổ mực</a>
+                                    <a href="#" class="float-right">14:00 19/08/2024</a>
+                                    <p>Đổ mực Ricoh 6002</p>
+                                </li>
+                                
+                                <li>
+                                    <a target="_blank" href="#">Thay Vật Tư</a>
+                                    <a href="#" class="float-right">14:00 20/08/2024</a>
+                                    <p>Thay web dầu máy RICOH mp6002</p>
+                                </li>
+                                <li>
+                                    <a href="#">Đổ mực</a>
+                                    <a href="#" class="float-right">14:00 19/08/2024</a>
+                                    <p>Đổ mực xanh, vàng, đỏ</p>
+                                </li>
+                                <li>
+                                    <a href="#">Máy TOSHIBA E857 báo lỗi</a>
+                                    <a href="#" class="float-right">08:00 15/08/2024</a>
+                                    <p>Bản in bị mờ</p>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#">Thay Vật Tư</a>
+                                    <a href="#" class="float-right">14:00 20/08/2024</a>
+                                    <p>Thay web dầu máy RICOH mp6002</p>
+                                </li>
+                                <li>
+                                    <a href="#">Đổ mực</a>
+                                    <a href="#" class="float-right">14:00 19/08/2024</a>
+                                    <p>Đổ mực xanh, vàng, đỏ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="<?= site_url('devices') ?>" title="Danh sách thiết bị" class="btn btn-primary">Trở lại</a>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <a href="<?= site_url('devices') ?>" title="Danh sách thiết bị" class="btn btn-primary">Trở lại</a>
-                </div>
-            </div>
             </div>
         </div>
     </div>
