@@ -51,8 +51,8 @@
     <div id="collapProduct" class="collapse" aria-labelledby="headingProduct" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Sản phẩm & Giá</h6>
-            <a class="collapse-item" href="#">Sản Phẩm</a>
-            <a class="collapse-item" href="#">Thành phần</a>
+            <a class="collapse-item" href="<?= site_url('admin/product') ?>">Sản Phẩm</a>
+            <a class="collapse-item" href="<?= site_url('admin/component') ?>">Thành phần</a>
         </div>
     </div>
 </li>
